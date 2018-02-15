@@ -1,0 +1,12 @@
+{
+    "manifest_version": 2,
+    "name": "Fix that up!",
+    "version": "0.1.0",
+    "description": "Prevents merging fixup commits on Github",
+    "content_scripts": [
+        {
+            "matches": ["https://github.com/*/*/pull/*"],
+            "js": ["fixthatup.js"]
+        }
+    ]
+}
